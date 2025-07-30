@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: sms-listener
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python listener.py"
