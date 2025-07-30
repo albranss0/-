@@ -5,8 +5,8 @@ from telebot.types import BotCommand
 import csv
 import re
 import json
-from telethon.sync import TelegramClient
-client = TelegramClient("albrans", api_id, api_hash)
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
 API_TOKEN = '7625110082:AAEvVtXtroNyX98_le7BnpnEuCxJ8wDXNk8'  # ← غيّر هذا بتوكن البوت
 ADMIN_ID = 8102220739  # ← غيّر هذا بمعرفك كأدمن
 REQUIRED_CHANNEL = '@otp_albrans'
